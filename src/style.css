@@ -1,0 +1,70 @@
+html,
+body,
+#root
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.htmlScreen
+{
+    font-family: sans-serif;
+    color: white;
+    width: 200px;
+    pointer-events: none;
+    opacity: 0;
+    line-height: 1.5;
+    /* width: 2px; */
+}
+.htmlScreen p {
+    width: 500px;
+    font-size: 1.5rem;
+}
+
+.about-me-text {
+    background-color: hsla(272, 60%, 55%, 0.84);
+    color: white;
+    line-height: 1.5;
+    font-size: 4rem;
+    padding: 20px;
+    border-radius: 10px;  
+    width: 1700px;
+    max-width: 1000px;
+    padding: 10px;
+    transform: perspective(500px) translate3d(0px, 0, -1500px);
+}
+@media screen and (min-width: 480px) {
+    .about-me-text {
+        font-size: 6rem;
+        max-width: none;
+        /* width: 50vh; */
+        transform: perspective(500px) translate3d(0px, 0, -1500px);
+    }
+}
+.about-me-text p{
+
+    
+}
+.interface
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.back-button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    color: white;
+    pointer-events: auto;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+}
