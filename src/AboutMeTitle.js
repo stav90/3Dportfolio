@@ -1,4 +1,4 @@
-import { Text,  } from '@react-three/drei'
+import { Text, Html  } from '@react-three/drei'
 import { useThree, useFrame } from '@react-three/fiber'
 import { useRef, useState } from 'react'
 import * as THREE from 'three'
@@ -13,9 +13,10 @@ export default function AboutMeTitle()
 
     const aboutMeCameraAngle = useApp((state) => state.aboutMeCameraAngle)
 
-    return <Text 
+    return <>
+    <Text 
         font="/fonts/Thunderstorm.otf"
-        scale={ 7 }
+        scale={ 6 }
         maxWidth={ 1 }
         lineHeight={ 0.75 }
         textAlign="right"
@@ -36,4 +37,15 @@ export default function AboutMeTitle()
         ABOUT ME
         <meshBasicMaterial  tonnedMap={false}/>
     </Text>
+     <Html 
+        scale={1}  
+        position={ [ 2.7, 3.6, .3 ] }
+        rotation-y={ -  Math.PI * .5} 
+        transform 
+    >
+        <div className="circle">
+        
+        </div>
+    </Html>
+    </>
 }

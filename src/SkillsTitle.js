@@ -8,7 +8,7 @@ export default function SkillstTitle()
    return <Text 
     onClick={skillsCameraAngle}
     font="/fonts/Thunderstorm.otf"
-    scale={ 7 }
+    scale={ 6 }
     maxWidth={ 0.25 }
     lineHeight={ 0.75 }
     textAlign="right"

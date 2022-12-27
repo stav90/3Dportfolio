@@ -13,7 +13,8 @@ import Name from './Name'
 import Avatar from './Avatar'
 import {ScrollScene} from './ScrollScene'
 import Skateboards from './SkateBoards'
-
+// import Nodetoy from './NodeToy'
+import { NodeToyMaterial, NodeToyTick } from '@nodetoy/react-nodetoy'
 export default function Experience()
 {    
     // const {directionalLightX, directionalLightY, directionalLightZ, intensity} = useControls({
@@ -66,6 +67,12 @@ export default function Experience()
             scale={ 20 }
             blur={ 2.4 }
         />
+        {/* <Nodetoy /> */}
+        {/* <mesh>
+            <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
+            <NodeToyMaterial url={"https://draft.nodetoy.co/cAymkeckjGLRW2R3"} />
+        </mesh>
+        <NodeToyTick /> */}
         {/* <Effects /> */}
     </>
 }

@@ -1,11 +1,13 @@
 
 
-import React, { useRef } from "react";
+import React, { useRef, Suspense } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from 'three'
 import { useControls } from 'leva'
 
 export default function RoomModel(props) {
+
+
     const textureProps = useTexture({
         // map: '/textures/bricks/Stylized_Bricks_001_basecolor.jpg',
         // displacementMap: '/textures/bricks/Stylized_Bricks_001_height.png',
@@ -25,6 +27,7 @@ export default function RoomModel(props) {
 
   const { nodes, materials } = useGLTF("/models/portfolio2.glb");
   return (
+    <Suspense>
     <group {...props} dispose={null} position={[0, -2, 0]}>
     <mesh
       name="plant2"
@@ -523,6 +526,7 @@ export default function RoomModel(props) {
       
     </group>
   </group>
+  </Suspense>
   );
 }
 

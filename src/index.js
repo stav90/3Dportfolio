@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { Canvas } from '@react-three/fiber'
 import Experience from './Experience.js'
 import BackButton from './BackButton'
+import Button from './Button'
+import ProjectNavButtons from './Nav'
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
 root.render(
@@ -18,6 +20,7 @@ root.render(
             <Experience />
         </Canvas>
         <BackButton />
+        {/* <ProjectNavButtons /> */}
     </>
    
 )
