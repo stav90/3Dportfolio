@@ -3,6 +3,7 @@ import { subscribeWithSelector } from 'zustand/middleware'
 
 export default create(subscribeWithSelector((set) => {
     return {
+        currentAnimation: 'default',
         currentCameraAngle: 'default',
         resetCameraAngle: () => {
             set((state) => {
@@ -23,6 +24,17 @@ export default create(subscribeWithSelector((set) => {
             set((state) => {
                 return {currentCameraAngle: 'skills angle'} 
             })
+        },
+        danceAnimation: () => {
+            set((state) => {
+                return {currentAnimation: 'dance'} 
+            })
+        },
+        waveAnimation: () => {
+            set((state) => {
+                return {currentAnimation: 'default'} 
+            })
         }
+        
     }
 }))
